@@ -5,7 +5,6 @@
 :set shiftwidth=2
 :set smarttab
 :set softtabstop=2
-:set mouse=a
 :set signcolumn=no
 :set breakindent
 
@@ -13,7 +12,6 @@ call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
-Plug 'folke/tokyonight.nvim'
 
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -83,7 +81,7 @@ lua << EOF
     capabilities = capabilities
   }
 
-	require('lspconfig').tsserver.setup {
-		capabilities = capabilities
-	}
+  require('lspconfig').tsserver.setup {
+    capabilities = capabilities
+  }
 EOF
